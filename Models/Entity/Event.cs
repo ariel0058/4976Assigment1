@@ -24,5 +24,6 @@ namespace ZenithWebSite.Models.Entity
         [ForeignKey("activityId")]
         public Activity Activity { get; set; }
 
+
     }
 }
