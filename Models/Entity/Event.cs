@@ -15,8 +15,9 @@ namespace ZenithWebSite.Models.Entity
         //saved as "dd-MM-yyyy hh:mm:ss"
         public DateTime eventFrom { get; set; }
         public DateTime eventTo { get; set; }
-        public string username { get; set; }
+        public string Username { get; set; }
         [Display(Name = "Create Time")]
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
         public DateTime createEvent { get; set; }
         public bool isActive { get; set; }
 

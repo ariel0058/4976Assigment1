@@ -174,13 +174,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\EventMigrations\201702062116293_PInitialCreate.cs" />
-    <Compile Include="Migrations\EventMigrations\201702062116293_PInitialCreate.Designer.cs">
-      <DependentUpon>201702062116293_PInitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\EventMigrations\201702080335392_PInitialCreate1.cs" />
-    <Compile Include="Migrations\EventMigrations\201702080335392_PInitialCreate1.Designer.cs">
-      <DependentUpon>201702080335392_PInitialCreate1.cs</DependentUpon>
+    <Compile Include="Migrations\EventMigrations\201702080636339_MInitialCreate.cs" />
+    <Compile Include="Migrations\EventMigrations\201702080636339_MInitialCreate.Designer.cs">
+      <DependentUpon>201702080636339_MInitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\EventMigrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -192,6 +188,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-ZenithWebSite-20170206010314.mdf" />
+    <Content Include="App_Data\aspnet-ZenithWebSite-20170206010314_log.ldf">
+      <DependentUpon>aspnet-ZenithWebSite-20170206010314.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="docs\migration.txt" />
@@ -253,9 +253,7 @@
     <Content Include="Views\Events\Edit.cshtml" />
     <Content Include="Views\Events\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -265,11 +263,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\EventMigrations\201702062116293_PInitialCreate.resx">
-      <DependentUpon>201702062116293_PInitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\EventMigrations\201702080335392_PInitialCreate1.resx">
-      <DependentUpon>201702080335392_PInitialCreate1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\EventMigrations\201702080636339_MInitialCreate.resx">
+      <DependentUpon>201702080636339_MInitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

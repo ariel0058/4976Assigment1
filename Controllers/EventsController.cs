@@ -12,6 +12,7 @@ using ZenithWebSite.Models.Entity;
 
 namespace ZenithWebSite.Controllers
 {
+    [Authorize]
     public class EventsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -42,8 +43,11 @@ namespace ZenithWebSite.Controllers
         // GET: Events/Create
         public ActionResult Create()
         {
+            Event @event = new Event();
+            @event.Username = User.Identity.Name;
+
             ViewBag.activityId = new SelectList(db.Activity, "activityId", "description");
-            return View();
+            return View(@event);
         }
 
         // POST: Events/Create
@@ -51,12 +55,15 @@ namespace ZenithWebSite.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "eventId,eventFrom,eventTo,username,createEvent,isActive,activityId")] Event @event)
+        public ActionResult Create(Event @event)
         {
             if (ModelState.IsValid)
             {
                 db.Event.Add(@event);
                 db.SaveChanges();
+
+                //string currentUser = Environment.UserName;
+
                 return RedirectToAction("Index");
             }
 

@@ -67,6 +67,5 @@ c:\users\yyao\documents\visual studio 2015\Projects\ZenithWebSite\ZenithWebSite\
 c:\users\yyao\documents\visual studio 2015\Projects\ZenithWebSite\ZenithWebSite\obj\Debug\ZenithWebSite.csprojResolveAssemblyReference.cache
 c:\users\yyao\documents\visual studio 2015\Projects\ZenithWebSite\ZenithWebSite\obj\Debug\ZenithWebSite.dll
 c:\users\yyao\documents\visual studio 2015\Projects\ZenithWebSite\ZenithWebSite\obj\Debug\ZenithWebSite.pdb
-c:\users\yyao\documents\visual studio 2015\Projects\ZenithWebSite\ZenithWebSite\obj\Debug\ZenithWebSite.Migrations.EventMigrations.PInitialCreate.resources
-c:\users\yyao\documents\visual studio 2015\Projects\ZenithWebSite\ZenithWebSite\obj\Debug\ZenithWebSite.csproj.GenerateResource.Cache
-C:\Users\YYao\Documents\Visual Studio 2015\Projects\ZenithWebSite\ZenithWebSite\obj\Debug\ZenithWebSite.Migrations.EventMigrations.PInitialCreate1.resources
+C:\Users\YYao\Documents\Visual Studio 2015\Projects\ZenithWebSite\ZenithWebSite\obj\Debug\ZenithWebSite.Migrations.EventMigrations.MInitialCreate.resources
+C:\Users\YYao\Documents\Visual Studio 2015\Projects\ZenithWebSite\ZenithWebSite\obj\Debug\ZenithWebSite.csproj.GenerateResource.Cache
